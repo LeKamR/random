@@ -3,10 +3,12 @@ from datetime import *
 from math import *
 def random():
     x=datetime.now()
-    x=x.microsecond
-    x=map(int,str(x))
-    x=sum(x)
-    x=int(x**3+256+exp(x+3))
+    x=str(x.microsecond)
+    x=int(x)
+    n=datetime.now()
+    n=str(n.microsecond)
+    n=int(n)
+    x=x**3+256-n
     x+= 536
     x=x%10
     print(x)
