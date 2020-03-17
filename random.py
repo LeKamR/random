@@ -1,5 +1,6 @@
 #usr/bin/env python
 from datetime import *
+from math import *
 def random():
     x=datetime.now()
     x=str(x.microsecond)
